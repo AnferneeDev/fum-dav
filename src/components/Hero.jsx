@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero__visual" aria-hidden="true">
-          <img src="/hero-technician.jpg" alt="" />
+          <img src="/hero-technician_upscayl_4x_upscayl-standard-4x.png" alt="" />
         </div>
       </div>
       <div className="wave wave--red" />
