@@ -15,7 +15,7 @@ export default function Hero() {
           <h1>Soluciones profesionales <span>contra plagas</span></h1>
           <p className="hero__lead">Brindamos servicios de fumigación eficientes, seguros y garantizados para hogares, negocios e industrias.</p>
           <div className="hero__actions">
-            <a className="button button--primary" href="https://wa.me/18091234567" target="_blank" rel="noreferrer"><MessageCircle size={19} /> Pedir cotización</a>
+            <a className="button button--whatsapp" href="https://wa.me/584143909476" target="_blank" rel="noreferrer"><MessageCircle size={19} /> Pedir cotización</a>
             <a className="button button--outline" href="#servicios">Nuestros servicios</a>
           </div>
           <div className="hero__trust">
@@ -29,7 +29,6 @@ export default function Hero() {
         </div>
         <div className="hero__visual" aria-hidden="true">
           <img src="/hero-technician.jpg" alt="" />
-          <div className="hero__logo-orb"><img src="/logo-mark.png" alt="" /></div>
         </div>
       </div>
       <div className="wave wave--red" />

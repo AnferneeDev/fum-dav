@@ -1,4 +1,4 @@
-import { Menu, Phone, X } from 'lucide-react';
+import { Menu, MessageCircle, X } from 'lucide-react';
 import { useState } from 'react';
 import Brand from './Brand';
 
@@ -23,12 +23,12 @@ export default function Header() {
               {label}
             </a>
           ))}
-          <a className="header__phone header__phone--mobile" href="tel:+18091234567">
-            <Phone size={18} /> 809 123 4567
+          <a className="header__phone header__phone--mobile header__phone--whatsapp" href="https://wa.me/584143909476" target="_blank" rel="noreferrer">
+            <MessageCircle size={18} /> +58 414 390 9476
           </a>
         </nav>
-        <a className="header__phone" href="https://wa.me/18091234567" target="_blank" rel="noreferrer">
-          <Phone size={18} /> 809 123 4567
+        <a className="header__phone header__phone--whatsapp" href="https://wa.me/584143909476" target="_blank" rel="noreferrer">
+          <MessageCircle size={18} /> +58 414 390 9476
         </a>
         <button className="menu-button" onClick={() => setOpen(!open)} aria-label={open ? 'Cerrar menú' : 'Abrir menú'} aria-expanded={open}>
           {open ? <X /> : <Menu />}

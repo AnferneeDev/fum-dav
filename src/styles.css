@@ -65,6 +65,7 @@ h1 span, h2 span { color: var(--red); }
 .button--primary { color: #fff; background: var(--blue); box-shadow: 0 10px 22px rgba(12,72,168,.18); }
 .button--outline { color: var(--red); border: 1.5px solid var(--red); background: rgba(255,255,255,.88); }
 .button--danger { color: #fff; background: var(--red); }
+.button--whatsapp { color: #fff; background: #25d366; box-shadow: 0 10px 22px rgba(37,211,102,.2); }
 .hero__trust { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; max-width: 610px; margin-top: 32px; }
 .trust-card { min-height: 78px; display: flex; align-items: center; gap: 14px; padding: 15px; border-radius: 8px; background: rgba(255,255,255,.93); border: 1px solid #edf0f5; box-shadow: 0 9px 22px rgba(23,32,51,.055); }
 .trust-card__icon { color: var(--blue); flex: 0 0 auto; }
@@ -73,8 +74,6 @@ h1 span, h2 span { color: var(--red); }
 .hero__visual { position: absolute; z-index: 1; top: 0; right: 0; width: 52%; height: calc(100% - 8px); overflow: hidden; }
 .hero__visual::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg,#fff 0%,rgba(255,255,255,.82) 15%,rgba(255,255,255,0) 47%); }
 .hero__visual > img { width: 100%; height: 100%; object-fit: cover; object-position: 62% center; transform: scale(1.03); }
-.hero__logo-orb { position: absolute; z-index: 3; left: 23%; top: 28%; width: 170px; filter: drop-shadow(0 10px 20px rgba(12,72,168,.12)); }
-.hero__logo-orb img { mix-blend-mode: multiply; }
 .wave { position: absolute; left: -5%; width: 110%; height: 42px; bottom: 22px; transform: rotate(-1.1deg); border-radius: 50% 50% 0 0; }
 .wave--red { background: var(--red); bottom: 19px; }
 .wave--blue { background: var(--blue); bottom: -2px; transform: rotate(1deg); }
@@ -109,13 +108,14 @@ h1 span, h2 span { color: var(--red); }
 
 .contact-banner { padding: 18px 0; color: #fff; background: linear-gradient(90deg,#0a3f91,#0f55bd); }
 .contact-banner__inner { display: grid; grid-template-columns: 80px 1fr auto; align-items: center; gap: 22px; }
-.contact-banner img { width: 72px; height: 60px; object-fit: cover; filter: brightness(0) invert(1); mix-blend-mode: screen; }
+.contact-banner img { width: 72px; height: 60px; object-fit: cover; mix-blend-mode: multiply; }
 .contact-banner h2 { margin: 0 0 7px; font-size: 26px; }
 .contact-banner p { margin: 0; font-size: 12px; font-weight: 600; }
 
 .footer { padding: 52px 0 16px; color: #dbe5f8; background: #061a3d; }
 .footer__grid { display: grid; grid-template-columns: 1.25fr .7fr 1fr 1fr; gap: 56px; }
 .footer__brand > p { max-width: 285px; margin-top: 17px; font-size: 12px; line-height: 1.75; color: #bac7dd; }
+.footer .brand__mark { display: none; }
 .footer h3 { position: relative; margin-bottom: 22px; color: #fff; font-size: 12px; text-transform: uppercase; }
 .footer h3::after { content: ''; position: absolute; left: 0; bottom: -8px; width: 23px; height: 2px; background: var(--red); }
 .footer__grid > div:not(.footer__brand) { display: flex; flex-direction: column; gap: 11px; }
@@ -124,6 +124,7 @@ h1 span, h2 span { color: var(--red); }
 .footer a:hover { color: #fff; }
 .socials { display: flex; gap: 10px; margin-top: 18px; }
 .socials a { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.3); border-radius: 50%; }
+.socials a.socials__whatsapp { color: #25d366; border-color: #25d366; }
 .footer__bottom { margin-top: 40px; padding-top: 16px; text-align: center; border-top: 1px solid rgba(255,255,255,.13); color: #9eabc0; font-size: 11px; }
 
 @media (max-width: 1040px) {
@@ -156,7 +157,6 @@ h1 span, h2 span { color: var(--red); }
   .hero__copy { padding-bottom: 310px; }
   .hero__visual { top: auto; bottom: 24px; width: 100%; height: 340px; }
   .hero__visual::after { background: linear-gradient(180deg,#fff 0%,rgba(255,255,255,.25) 35%,rgba(255,255,255,0) 70%); }
-  .hero__logo-orb { width: 135px; left: 15%; top: 22%; }
   .services__grid { grid-template-columns: repeat(2,1fr); }
   .benefits__grid { grid-template-columns: 1fr 1fr; }
   .about__grid { grid-template-columns: 1fr; }
@@ -181,7 +181,6 @@ h1 span, h2 span { color: var(--red); }
   .trust-card { min-height: 65px; }
   .hero__copy { padding-bottom: 278px; }
   .hero__visual { height: 305px; }
-  .hero__logo-orb { width: 105px; }
   .services__grid { grid-template-columns: 1fr; }
   .service-card { min-height: unset; }
   .benefits__grid { grid-template-columns: 1fr; }
