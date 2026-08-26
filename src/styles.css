@@ -65,7 +65,6 @@ h1 span, h2 span { color: var(--red); }
 .button--primary { color: #fff; background: var(--blue); box-shadow: 0 10px 22px rgba(12,72,168,.18); }
 .button--outline { color: var(--red); border: 1.5px solid var(--red); background: rgba(255,255,255,.88); }
 .button--danger { color: #fff; background: var(--red); }
-.button--whatsapp { color: #fff; background: #25d366; box-shadow: 0 10px 22px rgba(37,211,102,.2); }
 .hero__trust { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; max-width: 610px; margin-top: 32px; }
 .trust-card { min-height: 78px; display: flex; align-items: center; gap: 14px; padding: 15px; border-radius: 8px; background: rgba(255,255,255,.93); border: 1px solid #edf0f5; box-shadow: 0 9px 22px rgba(23,32,51,.055); }
 .trust-card__icon { color: var(--blue); flex: 0 0 auto; }
@@ -124,7 +123,6 @@ h1 span, h2 span { color: var(--red); }
 .footer a:hover { color: #fff; }
 .socials { display: flex; gap: 10px; margin-top: 18px; }
 .socials a { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.3); border-radius: 50%; }
-.socials a.socials__whatsapp { color: #25d366; border-color: #25d366; }
 .footer__bottom { margin-top: 40px; padding-top: 16px; text-align: center; border-top: 1px solid rgba(255,255,255,.13); color: #9eabc0; font-size: 11px; }
 
 @media (max-width: 1040px) {
