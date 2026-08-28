@@ -1,0 +1,15 @@
+{
+  "name": "Fumigaciones David",
+  "short_name": "Fumigaciones David",
+  "description": "Fumigación y control de plagas en Distrito Capital, Venezuela.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0c48a8",
+  "icons": [{
+    "src": "/logo-mark.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "any"
+  }]
+}

@@ -12,8 +12,8 @@ export default function Hero() {
       <div className="container hero__grid">
         <div className="hero__copy">
           <p className="eyebrow">PROTEGEMOS LO QUE MÁS IMPORTA</p>
-          <h1>Soluciones profesionales <span>contra plagas</span></h1>
-          <p className="hero__lead">Brindamos servicios de fumigación eficientes, seguros y garantizados para hogares, negocios e industrias.</p>
+           <h1>Fumigación profesional <span>en Distrito Capital</span></h1>
+           <p className="hero__lead">Brindamos servicios de fumigación eficientes, seguros y garantizados para hogares, negocios e industrias en Caracas y el Distrito Capital, Venezuela.</p>
           <div className="hero__actions">
             <a className="button button--primary" href="https://wa.me/584143909476" target="_blank" rel="noreferrer"><MessageCircle size={19} /> Pedir cotización</a>
             <a className="button button--outline" href="#servicios">Nuestros servicios</a>
@@ -27,8 +27,8 @@ export default function Hero() {
             ))}
           </div>
         </div>
-        <div className="hero__visual" aria-hidden="true">
-          <img src="/hero-technician-upscaled.jpg" alt="" />
+        <div className="hero__visual">
+           <img src="/hero-technician-upscaled.jpg" alt="Técnico profesional realizando fumigación y control de plagas" fetchPriority="high" width="1200" height="800" />
         </div>
       </div>
       <div className="wave wave--red" />

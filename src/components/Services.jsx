@@ -14,7 +14,7 @@ export default function Services() {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">¿QUÉ HACEMOS?</p>
-          <h2>Nuestros <span>Servicios</span></h2>
+          <h2>Control de plagas y <span>fumigación</span></h2>
         </div>
         <div className="services__grid">
           {services.map(({ icon: Icon, title, text }) => (
@@ -26,7 +26,7 @@ export default function Services() {
             </article>
           ))}
         </div>
-        <div className="services__cta"><a href="#contacto" className="button button--primary">Ver todos los servicios</a></div>
+        <div className="services__cta"><a href="#contacto" className="button button--primary">Solicitar servicio en Distrito Capital</a></div>
       </div>
     </section>
   );
